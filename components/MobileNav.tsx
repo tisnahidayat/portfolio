@@ -1,7 +1,12 @@
 "use client";
 
 import { CiMenuFries } from "react-icons/ci";
-import { SheetTrigger, Sheet, SheetContent } from "@/components/ui/sheet";
+import {
+  SheetTrigger,
+  Sheet,
+  SheetContent,
+  SheetTitle,
+} from "@/components/ui/sheet";
 import Link from "next/link";
 import { links } from "@/app/libs/links";
 import { usePathname } from "next/navigation";
@@ -14,6 +19,7 @@ const MobileNav = () => {
         <CiMenuFries className="text-[32px] text-accent hover:text-accent cursor-pointer mr-5" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
+        <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
         <div className="mt-28 mb-16 text-center text-2xl font-semibold">
           <Link href={"/"}>
             Tisna Hidayat<span className="text-accent">.</span>

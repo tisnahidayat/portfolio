@@ -6,12 +6,12 @@ import { stats } from "@/app/libs/stats";
 const Stats = () => {
   return (
     <div className="flex flex-col items-center justify-center pb-16">
-      <div className="flex flex-wrap gap-6 lg:gap-20 xl:gap-28 max-w-[80vw] xl:w-max-none justify-center">
+      <div className="flex flex-wrap gap-6 lg:gap-20 xl:gap-28 bg-pink-500 xl:w-max-none justify-center">
         {stats.map((stat, index) => {
           return (
             <div
               key={index}
-              className="flex flex-1 gap-3 items-center justify-center xl:justify-start"
+              className="flex flex-1 gap-2 items-center justify-center xl:justify-start"
             >
               <CountUp
                 end={stat.number}
