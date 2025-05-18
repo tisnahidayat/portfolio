@@ -44,13 +44,15 @@ const Resume = () => {
                 <div className="flex flex-col gap-[30px] text-center lg:text-left">
                   <h3 className="text-4xl font-bold flex justify-center lg:justify-start items-center gap-3">
                     {experience.title}
-                    <Experience />
+                    <span className="hidden sm:block">
+                      <Experience />
+                    </span>
                   </h3>
                   <p className="text-white/60 text-[15px]">
                     {experience.description}
                   </p>
                   <ScrollArea className="lg:h-[250px]">
-                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-[30px]">
                       {experience.items.map((item, index) => (
                         <li
                           key={index}
@@ -60,7 +62,7 @@ const Resume = () => {
                             {item.duration}
                           </span>
 
-                          <h3 className="text-xl max-w-[300px] min-h-[50px] text-center lg:text-left">
+                          <h3 className="text-xl max-w-[400px] min-h-[50px] text-center lg:text-left">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-2">
@@ -80,13 +82,15 @@ const Resume = () => {
                 <div className="flex flex-col gap-[30px] text-center lg:text-left">
                   <h3 className="text-4xl font-bold flex justify-center lg:justify-start items-center gap-3">
                     {education.title}
-                    <Education />
+                    <span className="hidden sm:block">
+                      <Education />
+                    </span>
                   </h3>
                   <p className="text-white/60 text-[15px]">
                     {education.description}
                   </p>
                   <ScrollArea className="h-[250px]">
-                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-[30px]">
                       {education.items.map((item, index) => (
                         <li
                           key={index}
@@ -96,10 +100,10 @@ const Resume = () => {
                             {item.duration}
                           </span>
 
-                          <h3 className="text-xl max-w-[300px] min-h-[50px] text-center lg:text-left">
+                          <h3 className="text-xl max-w-[400px] min-h-[50px] text-center lg:text-left">
                             {item.degree}
                           </h3>
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-2 w-full">
                             <span className="w-2 h-2 rounded-full bg-accent"></span>
                             <p className="text-white/60 leading-5">
                               {item.school}
@@ -116,13 +120,15 @@ const Resume = () => {
                 <div className="flex flex-col gap-[30px] text-center lg:text-left">
                   <h3 className="text-4xl font-bold flex justify-center lg:justify-start items-center gap-3">
                     {skills.title}
-                    <Skills />
+                    <span className="hidden sm:block">
+                      <Skills />
+                    </span>
                   </h3>
                   <p className="text-white/60 text-[15px]">
                     {skills.description}
                   </p>
                   <ScrollArea className="h-[250px]">
-                    <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 xl:gap-[18px]">
+                    <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 xl:gap-[18px]">
                       {skills.skillList.map((item, index) => {
                         const Icon = item.icon;
                         return (
@@ -148,22 +154,26 @@ const Resume = () => {
                 <div className="flex flex-col gap-[30px] text-center lg:text-left">
                   <h3 className="text-4xl font-bold flex justify-center lg:justify-start items-center gap-3">
                     {about.title}
-                    <About />
+                    <span className="hidden sm:block">
+                      <About />
+                    </span>
                   </h3>
                   <p className="text-white/60 text-[15px]">
                     {about.description}
                   </p>
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-y-5 gap-x-5">
+                  <ul className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-y-5 gap-x-5">
                     {about.info.map((item, index) => {
                       return (
                         <li
                           key={index}
                           className="flex items-center justify-center lg:justify-start gap-2"
                         >
-                          <span className="text-white/60">
+                          <span className="text-white/60 text-[15px] lg:text-md">
                             {item.fieldName}
                           </span>
-                          <span className="text-lg">{item.fieldValue}</span>
+                          <span className="text-[15px] lg:text-md">
+                            {item.fieldValue}
+                          </span>
                         </li>
                       );
                     })}

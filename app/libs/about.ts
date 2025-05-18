@@ -85,6 +85,10 @@ export const about: About = {
       fieldValue: "Tisna Hidayat",
     },
     {
+      fieldName: "Email",
+      fieldValue: "tisnahidayat1993@gmail.com",
+    },
+    {
       fieldName: "Phone",
       fieldValue: "(+62) 823 9728 7915",
     },
@@ -93,20 +97,16 @@ export const about: About = {
       fieldValue: "5+ years",
     },
     {
-      fieldName: "Language",
-      fieldValue: "Indonesia, English",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "tisna.hd@gmail.com",
-    },
-    {
       fieldName: "Freelance",
       fieldValue: "Available",
     },
     {
-      fieldName: "Nationality",
-      fieldValue: "Indonesian",
+      fieldName: "Language",
+      fieldValue: "Indonesia, English",
+    },
+    {
+      fieldName: "Location",
+      fieldValue: "Karawang, Jawa Barat",
     },
   ],
 };

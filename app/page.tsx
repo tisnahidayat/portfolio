@@ -22,14 +22,16 @@ const Home = () => {
           <div className="flex flex-col xl:flex-row items-center justify-between">
             {/* text */}
             <div className="text-center xl:text-left order-2 xl:order-none w-full">
-              <span className="text-2xl md:text-2xl lg:text-3xl">
+              <span className="text-2xl md:text-2xl lg:text-3xl xl:text-4xl">
                 Software Developer
               </span>
-              <h1 className="h1 mb-4 mt-3">
+              <h1 className="h1 mb-4 mt-3 text-3xl xl:text-6xl">
                 Hello, I&apos;m <br />
-                <span className="text-accent">Tisna Hidayat</span>
+                <span className="text-accent text-3xl xl:text-6xl">
+                  Tisna Hidayat
+                </span>
               </h1>
-              <p className="lg:max-w-[550px] md:text-[18px] mb-9">
+              <p className="xl:w-[90%] md:text-[18px] xl:text-xl mb-9 text-center mx-auto xl:mx-0 xl:text-left">
                 I craft elegant, efficient, and reliable web applications that
                 solve real problems and delight real users.
               </p>
