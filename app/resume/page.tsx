@@ -128,15 +128,15 @@ const Resume = () => {
                     {skills.description}
                   </p>
                   <ScrollArea className="h-[250px]">
-                    <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 xl:gap-[18px]">
+                    <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 xl:grid-cols-4 xl:gap-[18px]">
                       {skills.skillList.map((item, index) => {
                         const Icon = item.icon;
                         return (
                           <li key={index}>
                             <TooltipProvider delayDuration={100}>
                               <Tooltip>
-                                <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                                  <Icon className="w-15 h-15 group-hover:text-accent transition-all duration-500 ease-in-out cursor-pointer" />
+                                <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center cursor-pointer group">
+                                  <Icon className="w-15 h-15 group-hover:text-accent transition-all duration-500 ease-in-out" />
                                 </TooltipTrigger>
                                 <TooltipContent>
                                   <p>{item.name}</p>
