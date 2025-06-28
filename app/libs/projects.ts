@@ -19,15 +19,6 @@ export const projects: Projects = [
     category: "Frontend",
     items: [
       {
-        title: "Asset Management Information System",
-        description:
-          "This project is a web-based information system designed to present data about tourist destinations, local culture, and supporting facilities within Karawang Regency. The system aims to help tourists and locals easily access tourism-related information in a fast.",
-        image: "/img/mms.png",
-        github: "https://github.com/tisnahidayat",
-        demo: "https://github.com/tisnahidayat",
-        techStack: ["Laravel", "Bootstrap", "MySQL"],
-      },
-      {
         title: "Mitra Management Information System",
         description:
           "The Partner Management System (MMS) application is an application initiated to carry out the process of submitting new partners who will collaborate with BSI for BSI Payment Institution (BPI) products or products managed by the Digital Strategy and Product Group (DPG) work unit.",
@@ -68,10 +59,11 @@ export const projects: Projects = [
     items: [
       {
         title: "RiceBuddy App",
-        description: "Blogr landing page with dark theme",
+        description:
+          "RiceBuddy is a mobile application designed to detect the health condition of rice plants based on visual imagery. The app utilizes a machine learning model trained by the AI team to classify the condition of the crops and delivers real-time detection results through a simple and user-friendly interface.",
         image: "/img/project/blogr.png",
-        github: "https://github.com/TisnaHidayat/blogr-landing-page",
-        demo: "https://tisnahidayat.github.io/blogr-landing-page/",
+        github: "https://github.com/C23-PS449",
+        demo: "https://github.com/C23-PS449",
         techStack: ["Kotlin", "XML", "Firebase", "Jetpack Compose", "Room"],
       },
     ],

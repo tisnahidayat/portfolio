@@ -38,7 +38,7 @@ const Works = () => {
   };
 
   return (
-    <section className="px-[3rem]">
+    <section className="px-6">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -113,16 +113,15 @@ const Works = () => {
                   <p className="text-white/60">{currentItem.description}</p>
                 </ScrollArea>
                 {/* Tech Stack */}
-                <ul className="flex gap-2">
-                  {currentItem.techStack.map((tech, i) => {
-                    return (
-                      <li key={i} className="text-accent text-md">
-                        {tech}
-                        {i !== currentItem.techStack.length - 1 && ","}
-                      </li>
-                    );
-                  })}
-                </ul>
+                <div className="gap-2 flex flex-wrap">
+                  {currentItem.techStack.map((tech, i) => (
+                    <span key={i} className="text-accent text-md">
+                      {tech}
+                      {i !== currentItem.techStack.length - 1 && ","}
+                    </span>
+                  ))}
+                </div>
+
                 <div className="border border-white/20 mb-4"></div>
 
                 {/* Links */}

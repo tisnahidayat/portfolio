@@ -64,14 +64,16 @@ type Education = {
   }[];
 };
 
+type SkillItem = {
+  name: string;
+  icon: IconType;
+}
+
 type Skills = {
   title: string;
   description: string;
   iconSkill: IconType;
-  skillList: {
-    name: string;
-    icon: IconType;
-  }[];
+  skillList: SkillItem[];
 };
 
 export const about: About = {
@@ -185,7 +187,8 @@ export const education: Education = {
   ],
 };
 
-export const skills: Skills = {
+export const skills: Skills = 
+{
   title: "My Skills",
   iconSkill: FaCode,
   description:
