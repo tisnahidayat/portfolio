@@ -1,70 +1,124 @@
 type ProjectItem = {
   title: string;
   description: string;
-  image: string;
-  github: string;
-  demo: string;
+  github?: string;
+  sheet?: string;
   techStack: string[];
+  status?: "completed" | "ongoing" | "future";
 };
 
 type Projects = {
-  num: string;
   category: string;
   items: ProjectItem[];
 }[];
 
 export const projects: Projects = [
   {
-    num: "01",
-    category: "Frontend",
+    category: "Automation/Manual Testing",
     items: [
       {
-        title: "Mitra Management Information System",
+        title: "Tokopedia Web",
         description:
-          "The Partner Management System (MMS) application is an application initiated to carry out the process of submitting new partners who will collaborate with BSI for BSI Payment Institution (BPI) products or products managed by the Digital Strategy and Product Group (DPG) work unit.",
-        image: "/img/mms.png",
-        github: "https://github.com/TisnaHidayat/fylo-landing-page",
-        demo: "https://tisnahidayat.github.io/fylo-landing-page/",
-        techStack: ["ReactJS", "TailwindCSS"],
+          "Performed manual testing on Tokopedia web using test cases documented in spreadsheets. Executed functional, UI, and usability tests. Reported bugs and collaborated with developers for resolution.",
+        sheet:
+          "https://docs.google.com/spreadsheets/d/1TdKudb3kfk08KYqWcx-XdhnNi7NrH59s_On4Yyi1VRI/edit?usp=sharing",
+        techStack: ["Google Sheets", "JIRA", "Chrome"],
+        status: "completed",
+      },
+      {
+        title: "Reqres.in API",
+        description:
+          "Developed automated API tests for reqres.in using Pytest and Requests. Covered user creation, login, and data retrieval with positive and negative test cases. Used Pytest fixtures and generated reports with pytest-html.",
+        sheet:
+          "https://docs.google.com/spreadsheets/d/13umEsC1BWfS72LtJcnqEYX4YKhJt39-ixkWkXJActgs/edit?usp=sharing",
+        github: "https://github.com/tisnahidayat/pytest-automation-reqres",
+        techStack: ["Python", "Pytest", "Postman", "Github Action"],
+        status: "completed",
+      },
+      {
+        title: "DummyJSON API",
+        description:
+          "Automated API testing on DummyJSON API using Postman and Newman. Covered key endpoints with positive & negative cases. Organized requests in Postman collections and ran tests via CLI using Newman.",
+        sheet:
+          "https://docs.google.com/spreadsheets/d/1mSofKcFRLveaFjXKY7L_iF_T47cAnZskbh_CpoQzCXA/edit?usp=sharing",
+        github: "https://github.com/tisnahidayat/newman-automation-dummyjson",
+        techStack: ["Javascript", "HTML", "Postman"],
+        status: "completed",
+      },
+      {
+        title: "OpenWeather API",
+        description:
+          "Automated API testing for OpenWeather API using Pytest and Requests. Covered current weather, forecast, and error handling scenarios. Used fixtures for config and generated test reports with pytest-html.",
+        github: "https://github.com/tisnahidayat/openweatherapi-pytest",
+        sheet:
+          "https://docs.google.com/spreadsheets/d/13ZcFZv1915A_B0OnaghIX-OWlcmp0k57mpqDPTSgoiE/edit?gid=1650920338#gid=1650920338",
+        techStack: ["Python", "Pytest", "Postman", "Github Action"],
+        status: "completed",
+      },
+      {
+        title: "Jobstreet",
+        description:
+          "A system that integrates Jobstreet data using Google Sheets for tracking, JIRA for task management, and Chrome extensions for workflow. Designed to streamline job listing reviews and improve the recruitment process.",
+        sheet: "",
+        techStack: ["Google Sheet", "JIRA", "Chrome"],
+        status: "future",
+      },
+      {
+        title: "Spotify",
+        description:
+          "A system that utilizes Spotify data integrated with Google Sheets and JIRA to track music trends, manage tasks, and support content planning for campaigns or user engagement initiatives.",
+        sheet: "",
+        techStack: ["Google Sheet", "JIRA", "Spotify"],
+        status: "future",
       },
     ],
   },
+
   {
-    num: "02",
     category: "Fullstack",
     items: [
       {
-        title: "Karawang Regency Tourism Information System",
+        title: "Tourism Information System",
         description:
-          "This project is a web-based information system designed to present data about tourist destinations, local culture, and supporting facilities within Karawang Regency. The system aims to help tourists and locals easily access tourism-related information in a fast.",
-        image: "/img/siparkar.png",
+          "A web-based system to display tourist destinations, local culture, and public facilities in Karawang. It is specifically built to help both tourists and local residents access tourism info quickly and easily.",
         github: "https://github.com/tisnahidayat/tourism-information-system",
-        demo: "https://github.com/tisnahidayat/tourism-information-system",
         techStack: ["Laravel", "Bootstrap", "Saas", "MySQL"],
+        status: "completed",
       },
       {
         title: "Dashboard Ecommerce",
         description:
-          "Dashboard Web using Next.js This project is a dashboard application built with Next.js, a React framework that enables the creation of fast, scalable, and SEO-friendly web applications. The dashboard is designed to provide an interactive and user-friendly interface for monitoring and managing data.",
-        image: "/img/acne.png",
+          "Built an interactive ecommerce dashboard while learning Next.js. Features include responsive UI, data visualization, and layout structure. Developed with TailwindCSS and PostgreSQL integration.",
         github: "https://github.com/tisnahidayat/nextjs-dashboard",
-        demo: "https://dashboard-ecommerce-acne.vercel.app/",
         techStack: ["Next.js", "TailwindCSS", "PostgreSQL"],
+        status: "ongoing",
       },
     ],
   },
   {
-    num: "03",
+    category: "Frontend",
+    items: [
+      {
+        title: "Geographic Information System Indonesia",
+        description:
+          "Developed a web-based GIS app to visualize and explore Indonesia's regions using Leaflet and JSON data. Built with Next.js and TailwindCSS, enabling interactive map views and responsive UI.",
+        github:
+          "https://github.com/tisnahidayat/geographic-information-system-indonesia",
+        techStack: ["Next.js", "TailwindCSS", "JSON", "Leaflet"],
+        status: "ongoing",
+      },
+    ],
+  },
+  {
     category: "Android",
     items: [
       {
         title: "RiceBuddy App",
         description:
           "RiceBuddy is a mobile application designed to detect the health condition of rice plants based on visual imagery. The app utilizes a machine learning model trained by the AI team to classify the condition of the crops and delivers real-time detection results through a simple and user-friendly interface.",
-        image: "/img/project/blogr.png",
         github: "https://github.com/C23-PS449",
-        demo: "https://github.com/C23-PS449",
-        techStack: ["Kotlin", "XML", "Firebase", "Jetpack Compose", "Room"],
+        techStack: ["Kotlin", "Firebase", "Jetpack", "Room"],
+        status: "completed",
       },
     ],
   },

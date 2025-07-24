@@ -5,29 +5,29 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaNodeJs,
-  FaFigma,
-  FaGitAlt,
-  FaBootstrap,
-  FaPhp,
   FaLaravel,
   FaCompass,
   FaGraduationCap,
-  FaVuejs,
   FaCode,
   FaRobot,
+  FaJava,
 } from "react-icons/fa";
 
 import {
-  SiTailwindcss,
   SiNextdotjs,
   SiMysql,
   SiSelenium,
   SiVitest,
-  SiTypescript,
   SiPython,
-  SiVite,
   SiPostgresql,
+  SiJest,
+  SiCypress,
+  SiPostman,
+  SiSwagger,
+  SiAppium,
+  SiPytest,
+  SiChai,
+  SiCucumber,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
 
@@ -67,7 +67,7 @@ type Education = {
 type SkillItem = {
   name: string;
   icon: IconType;
-}
+};
 
 type Skills = {
   title: string;
@@ -80,7 +80,7 @@ export const about: About = {
   title: "About Me",
   icon: FaRobot,
   description:
-    "I'm a passionate Software Developer with a strong interest in web and mobile development. I enjoy turning ideas into real applications with clean code, responsive design, and great user experience. Always eager to learn, collaborate, and solve meaningful problems through technology.",
+    "I'm a passionate Software Quality Assurance enthusiast with a strong interest in ensuring software reliability across web and mobile platforms. I enjoy turning complex requirements into well-structured test plans and uncovering issues before users do. Always eager to learn, collaborate, and contribute to delivering high-quality, user-ready applications.",
   info: [
     {
       fieldName: "Name",
@@ -96,7 +96,7 @@ export const about: About = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "5+ years",
+      fieldValue: "1+ years",
     },
     {
       fieldName: "Freelance",
@@ -117,14 +117,14 @@ export const experience: Experience = {
   icon: FaCompass,
   title: "My Experience",
   description:
-    "I’ve built real-world skills through roles in tech organizations and companies—focusing on front-end development, clean UI, and responsive apps. These experiences sharpened my ability to solve problems and collaborate with teams using modern tools.",
+    "I’ve built real-world skills in tech organizations—focusing on software QA, test planning, and automation. These experiences improved my ability to find bugs, ensure reliability, and work with teams using modern QA tools.",
 
   items: [
     {
       company: "PT. Bank Syariah Indonesia",
-      position: "Frontend Developer",
+      position: "Software Quality Assurance",
       descJob:
-        "Developed responsive web applications using React.js, ensuring smooth UX across devices. Integrated RESTful APIs and managed state with Jotai and Redux. Collaborated with backend teams to resolve integration issues. Ensured quality through unit and integration testing with Vitest and JUnit.",
+        "Performed functional and regression testing on web and mobile applications to ensure system reliability. Created and executed test cases, documented results, and collaborated with developers and designers to identify and verify bugs. Also developed automated test scripts to increase efficiency and reduce manual workload.",
       duration: "2024 - 2025",
     },
     {
@@ -140,10 +140,15 @@ export const experience: Experience = {
 export const education: Education = {
   title: "My Education",
   description:
-    "I’ve built a strong tech foundation through formal education and certified programs, combining university studies with practical training in web, mobile, and UI/UX development.",
+    "I’ve built a strong tech foundation through formal education and certified programs, combining university studies with practical training in web, mobile, tetsing, and UI/UX development.",
 
   icon: FaGraduationCap,
   items: [
+    {
+      school: "MySkill",
+      degree: "Software Quality Assurance",
+      duration: "2025",
+    },
     {
       school: "Ahmad Dahlan University",
       degree: "Bachelor of Informatics",
@@ -153,11 +158,6 @@ export const education: Education = {
       school: "Informatics Laboratory",
       degree: "Certified Assistant Lecturer",
       duration: "2022 - 2024",
-    },
-    {
-      school: "IDCamp by Indosat",
-      degree: "Frontend Developer",
-      duration: "2024",
     },
     {
       school: "Informatics Student Association",
@@ -175,11 +175,6 @@ export const education: Education = {
       duration: "2023",
     },
     {
-      school: "Coding Studio",
-      degree: "Junior Web Developer",
-      duration: "2022",
-    },
-    {
       school: "Informatics Student Association",
       degree: "Public Relations",
       duration: "2021-2022",
@@ -187,8 +182,7 @@ export const education: Education = {
   ],
 };
 
-export const skills: Skills = 
-{
+export const skills: Skills = {
   title: "My Skills",
   iconSkill: FaCode,
   description:
@@ -207,16 +201,8 @@ export const skills: Skills =
       icon: FaJs,
     },
     {
-      name: "TypeScript",
-      icon: SiTypescript,
-    },
-    {
       name: "React",
       icon: FaReact,
-    },
-    {
-      name: "Vue",
-      icon: FaVuejs,
     },
     {
       name: "Next.js",
@@ -227,32 +213,12 @@ export const skills: Skills =
       icon: SiPython,
     },
     {
-      name: "Node.js",
-      icon: FaNodeJs,
-    },
-    {
-      name: "Vite",
-      icon: SiVite,
-    },
-    {
-      name: "Git",
-      icon: FaGitAlt,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: SiTailwindcss,
-    },
-    {
-      name: "Bootstrap",
-      icon: FaBootstrap,
-    },
-    {
-      name: "PHP",
-      icon: FaPhp,
-    },
-    {
       name: "Laravel",
       icon: FaLaravel,
+    },
+    {
+      name: "Java",
+      icon: FaJava,
     },
     {
       name: "Selenium",
@@ -271,8 +237,40 @@ export const skills: Skills =
       icon: SiPostgresql,
     },
     {
-      name: "Figma",
-      icon: FaFigma,
+      name: "Robot Framework",
+      icon: FaRobot,
+    },
+    {
+      name: "Jest",
+      icon: SiJest,
+    },
+    {
+      name: "Cypress",
+      icon: SiCypress,
+    },
+    {
+      name: "Postman",
+      icon: SiPostman,
+    },
+    {
+      name: "Swagger",
+      icon: SiSwagger,
+    },
+    {
+      name: "Appium",
+      icon: SiAppium,
+    },
+    {
+      name: "Pytest",
+      icon: SiPytest,
+    },
+    {
+      name: "Chai",
+      icon: SiChai,
+    },
+    {
+      name: "Gherkin",
+      icon: SiCucumber,
     },
   ],
 };

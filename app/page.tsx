@@ -23,7 +23,7 @@ const Home = () => {
             {/* text */}
             <div className="text-center xl:text-left order-2 xl:order-none w-full">
               <span className="text-2xl md:text-2xl lg:text-3xl xl:text-4xl">
-                Software Developer
+                Software Quality Assurance
               </span>
               <h1 className="h1 mb-4 mt-3 text-3xl xl:text-6xl">
                 Hello, I&apos;m <br />
@@ -32,14 +32,15 @@ const Home = () => {
                 </span>
               </h1>
               <p className="xl:w-[90%] md:text-[18px] xl:text-xl mb-9 text-center mx-auto xl:mx-0 xl:text-left">
-                I craft elegant, efficient, and reliable web applications that
-                solve real problems and delight real users.
+                I combine analytical thinking and technical skills to design
+                efficient test processes that improve product quality and
+                development speed.
               </p>
 
               {/* button and socials */}
               <div className="flex flex-col xl:flex-row items-center gap-5">
                 <a
-                  href="/docs/Curriculum Vitae - Tisna Hidayat.pdf"
+                  href="/docs/CV - Tisna Hidayat.pdf"
                   download="CV Tisna Hidayat"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -13,11 +13,11 @@ export const stats: Stats[] = [
     text: "Projects completed",
   },
   {
-    number: 8,
+    number: 10,
     text: "Technologies used",
   },
   {
-    number: 500,
+    number: 200,
     text: "Code committed",
   },
 ];
