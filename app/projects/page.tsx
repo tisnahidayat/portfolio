@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 import React from "react";
 import { projects } from "../libs/projects";
 
-import { BsGithub, BsFileEarmarkSpreadsheet } from "react-icons/bs";
+import {
+  BsGithub,
+  BsFileEarmarkSpreadsheet,
+  BsCollectionPlayFill,
+} from "react-icons/bs";
 import Link from "next/link";
 import {
   Tooltip,
@@ -92,7 +96,7 @@ const Works = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
-                                    <BsGithub className="text-xl hover:text-accent dark:hover:text-white transition" />
+                                    <BsGithub className="md:text-xl text-2xl hover:text-accent dark:hover:text-white transition" />
                                   </Link>
                                 </TooltipTrigger>
                                 <TooltipContent side="top">
@@ -109,12 +113,26 @@ const Works = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
-                                    <BsFileEarmarkSpreadsheet className="text-xl hover:text-accent transition" />
+                                    <BsFileEarmarkSpreadsheet className="md:text-xl text-2xl hover:text-accent transition" />
                                   </Link>
                                 </TooltipTrigger>
                                 <TooltipContent side="top">
                                   Test Case Sheet
                                 </TooltipContent>
+                              </Tooltip>
+                            )}
+                            {project.demo && (
+                              <Tooltip>
+                                <TooltipTrigger asChild>
+                                  <Link
+                                    href={project.demo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <BsCollectionPlayFill className="md:text-xl text-2xl hover:text-accent dark:hover:text-white transition" />
+                                  </Link>
+                                </TooltipTrigger>
+                                <TooltipContent side="top">Demo</TooltipContent>
                               </Tooltip>
                             )}
                           </TooltipProvider>

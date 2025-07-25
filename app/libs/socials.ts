@@ -1,5 +1,6 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import type { IconType } from "react-icons";
+import { SiGooglesheets, SiLinktree } from "react-icons/si";
 
 type Social = {
   icon: IconType;
@@ -20,7 +21,11 @@ export const socials: Social[] = [
     path: "https://instagram.com/tisnahidayat_/",
   },
   {
-    icon: FaTwitter,
-    path: "https://x.com/TisnaHidayat7",
+    icon: SiGooglesheets,
+    path: "https://docs.google.com/spreadsheets/d/1DMc20BeoRx21xAa7oKoMXKDyfUufh06YUr9gSiBRDuc/edit?gid=0#gid=0",
+  },
+  {
+    icon: SiLinktree,
+    path: "https://linktr.ee/tisnahidayat",
   },
 ];

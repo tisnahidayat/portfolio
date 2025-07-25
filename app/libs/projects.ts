@@ -4,6 +4,7 @@ type ProjectItem = {
   github?: string;
   sheet?: string;
   techStack: string[];
+  demo?: string;
   status?: "completed" | "ongoing" | "future";
 };
 
@@ -33,6 +34,7 @@ export const projects: Projects = [
           "https://docs.google.com/spreadsheets/d/13umEsC1BWfS72LtJcnqEYX4YKhJt39-ixkWkXJActgs/edit?usp=sharing",
         github: "https://github.com/tisnahidayat/pytest-automation-reqres",
         techStack: ["Python", "Pytest", "Postman", "Github Action"],
+        demo: "https://www.youtube.com/@tisnahidayat15",
         status: "completed",
       },
       {
@@ -43,6 +45,7 @@ export const projects: Projects = [
           "https://docs.google.com/spreadsheets/d/1mSofKcFRLveaFjXKY7L_iF_T47cAnZskbh_CpoQzCXA/edit?usp=sharing",
         github: "https://github.com/tisnahidayat/newman-automation-dummyjson",
         techStack: ["Javascript", "HTML", "Postman"],
+        demo: "https://www.youtube.com/@tisnahidayat15",
         status: "completed",
       },
       {
@@ -53,6 +56,7 @@ export const projects: Projects = [
         sheet:
           "https://docs.google.com/spreadsheets/d/13ZcFZv1915A_B0OnaghIX-OWlcmp0k57mpqDPTSgoiE/edit?gid=1650920338#gid=1650920338",
         techStack: ["Python", "Pytest", "Postman", "Github Action"],
+        demo: "https://www.youtube.com/@tisnahidayat15",
         status: "completed",
       },
       {
@@ -91,6 +95,7 @@ export const projects: Projects = [
           "Built an interactive ecommerce dashboard while learning Next.js. Features include responsive UI, data visualization, and layout structure. Developed with TailwindCSS and PostgreSQL integration.",
         github: "https://github.com/tisnahidayat/nextjs-dashboard",
         techStack: ["Next.js", "TailwindCSS", "PostgreSQL"],
+        demo: "https://dashboard-ecommerce-acne.vercel.app",
         status: "ongoing",
       },
     ],
@@ -105,6 +110,7 @@ export const projects: Projects = [
         github:
           "https://github.com/tisnahidayat/geographic-information-system-indonesia",
         techStack: ["Next.js", "TailwindCSS", "JSON", "Leaflet"],
+        demo: "https://gis-indonesia.vercel.app",
         status: "ongoing",
       },
     ],
