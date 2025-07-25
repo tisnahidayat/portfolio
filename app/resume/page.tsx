@@ -51,7 +51,7 @@ const Resume = () => {
                   <p className="text-white/60 text-[15px]">
                     {experience.description}
                   </p>
-                  <ScrollArea className="lg:h-[250px]">
+                  <ScrollArea className="h-[450px] md:h-[320px]">
                     <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-[30px]">
                       {experience.items.map((item, index) => (
                         <li
@@ -89,7 +89,7 @@ const Resume = () => {
                   <p className="text-white/60 text-[15px]">
                     {education.description}
                   </p>
-                  <ScrollArea className="h-[250px]">
+                  <ScrollArea className="h-[450px] md:h-[320px]">
                     <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-[30px]">
                       {education.items.map((item, index) => (
                         <li
@@ -103,7 +103,7 @@ const Resume = () => {
                           <h3 className="text-xl max-w-[400px] min-h-[50px] text-center lg:text-left">
                             {item.degree}
                           </h3>
-                          <div className="flex items-center gap-2 w-full">
+                          <div className="flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-accent"></span>
                             <p className="text-white/60 leading-5">
                               {item.school}
@@ -127,7 +127,7 @@ const Resume = () => {
                   <p className="text-white/60 text-[15px]">
                     {skills.description}
                   </p>
-                  <ScrollArea className="h-[250px]">
+                  <ScrollArea className="h-[450px] md:h-[320px]">
                     <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 xl:grid-cols-4 xl:gap-[18px]">
                       {skills.skillList.map((item, index) => {
                         const Icon = item.icon;
